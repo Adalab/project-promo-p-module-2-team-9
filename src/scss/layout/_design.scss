@@ -1,0 +1,77 @@
+.design {
+  &__header {
+    text-transform: uppercase;
+    width: 65px;
+    height: 24px;
+    margin: 0 67px 22px 10px;
+    font-family: OpenSans-SemiBold;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $gun-metal;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    width: 62px;
+    height: 19px;
+    margin: 22px 82px 32px 0;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $gun-metal;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__rectangle {
+    width: 30px;
+    height: 25px;
+
+    &--1 {
+      background-color: $dark-green-blue;
+    }
+
+    &--2 {
+      background-color: $dirty-blue;
+    }
+
+    &--3 {
+      background-color: $hospital-green;
+    }
+
+    &--4 {
+      background-color: $dried-blood;
+    }
+
+    &--5 {
+      background-color: $rusty-red;
+    }
+
+    &--6 {
+      background-color: $tomato;
+    }
+
+    &--7 {
+      background-color: $slate;
+    }
+
+    &--8 {
+      background-color: $faded-orange;
+    }
+
+    &--9 {
+      background-color: $light-grey-blue;
+    }
+  }
+}
