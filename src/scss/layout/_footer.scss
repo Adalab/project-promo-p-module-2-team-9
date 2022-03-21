@@ -1,8 +1,15 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    background-color: white;
+    font-family: $font-family3;
+    color: $brownish-grey;
+    padding: 30px 0 45px 0;
+
+&__logo {
+    width: 150px;
+    margin-top: 30px;
+}
 }
