@@ -102,6 +102,47 @@
   .design__rectangle--9 {
     background-color: #a0c0cf; }
 
+.form {
+  font-family: "Open Sans", sans-serif;
+  color: #114e4e;
+  font-size: 14px;
+  gap: 20px;
+  width: 320px;
+  padding: 27px 19px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+
+.field {
+  margin: 0 020px;
+  gap: 7px;
+  display: flex;
+  flex-direction: column; }
+  .field__placeholder {
+    height: 30px;
+    padding: 3px 7px;
+    border: solid 1px #a2deaf;
+    color: #c5c5c5;
+    font-family: "Open Sans", sans-serif; }
+
+.add_image {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px; }
+  .add_image__button {
+    width: 140px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    background-color: #e17334;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32); }
+  .add_image__checkbox {
+    height: 30px;
+    border: solid 1px #a2deaf; }
+
 .footer {
   display: flex;
   flex-direction: column;

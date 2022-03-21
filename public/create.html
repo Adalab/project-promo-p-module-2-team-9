@@ -99,7 +99,88 @@
     </div>
 
     </section>
-    
+    <form class="form" action="./signup" method="post">
+      <!-- <fieldset>
+        <legend class="legend">Rellena</legend> -->
+      <div class="field">
+        <label for="name">Nombre completo</label>
+        <input
+          class="field__placeholder"
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Ej: Sally Jill"
+          required
+        />
+      </div>
+      <div class="field">
+        <label for="job">Puesto</label>
+        <input
+          class="field__placeholder"
+          id="job"
+          type="text"
+          name="job"
+          placeholder="Ej: Front-end unicorn"
+          required
+        />
+      </div>
+      <div class="field">
+        <label for="proflie_image">Imagen de perfil</label>
+        <div class="add_image">
+          <input class="add_image__button" type="button" value="Añadir imagen" />
+          <!-- Este recuadro funciona con js -->
+          <input
+            class="add_image__checkbox"
+            type="checkbox"
+            value="checkbox"
+            name="added_image"
+          />
+        </div>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input
+          class="field__placeholder"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Ej: sally-hill@gmail.com"
+          required
+        />
+      </div>
+      <div class="field">
+        <label for="phone">Teléfono</label>
+        <input
+          class="field__placeholder"
+          id="phone"
+          type="tel"
+          name="phone"
+          placeholder="Ej: 555-55-55-55"
+        />
+      </div>
+      <div class="field">
+        <label for="linkedin">Linkedin</label>
+        <input
+          class="field__placeholder"
+          id="linkedin"
+          type="text"
+          name="linkedin"
+          placeholder="Ej: linkedin.com/in/sally.hill"
+        />
+      </div>
+      <div class="field">
+        <label for="github">Github</label>
+        <input
+          class="field__placeholder"
+          id="github"
+          type="text"
+          name="github"
+          placeholder="Ej: @sally-hill"
+        />
+      </div>
+      <!-- </fieldset> -->
+    </form>
+
     
     <footer class="footer">
       <p class="footer__copyright">Awesome profile-cards © 2018</p>
