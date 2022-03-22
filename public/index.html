@@ -22,33 +22,36 @@
       rel="stylesheet"
     />
     <title>Adalab Web Starter Kit</title>
-    <link rel="stylesheet" href="./assets/css/main.css" />
+  
+
     <link rel="icon" href="https://as2.ftcdn.net/v2/jpg/03/14/86/81/1000_F_314868179_4G18ugvyNuUZYNlpjXm0y5rngnLUAxN4.jpg"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
 
   <body>
     <main class="main">
+        <div class="main__landing">
         <img src="./assets/images/tarjetas-molonas.png" class="main__logo" alt="logo" width="250px" height="63px" />
         <h1 class="main__title">Crea tu tarjeta de visita</h1>
         <p class="main__text">Crea mejores contactos profesionales de forma fácil y cómoda</p>
 
-        <ul class="main__list">
-            <li class="main__list--icon">
+        <form class="main__box">
+            <fieldset class="main__box--icon">
                 <i class="fa-solid fa-object-ungroup"></i>
-                <p class="main__list--icon__text">Diseña</p>
-            </li>
-            <li class="main__list--icon">
+                <legend class="main__text2">Diseña</legend>
+            </fieldset>
+            <fieldset class="main__box--icon">
                 <i class="fa-regular fa-keyboard"></i>
-                <p class="main__list--icon__text">Rellena</p>
-            </li>
-            <li class="main__list--icon">
-                <i class="fa-solid fa-diagram-project"></i>
-                <p class="main__list--icon__text">Comparte</p>
-            </li>
-        </ul>
-        <button class="main__button" type="start">comenzar</button>
-
+                <legend class="main__text">Rellena</legend>
+            </fieldset>
+            <fieldset class="main__box--icon">
+                <i class="fa fa-share-alt"></i>
+                <legend class="main__text">Comparte</legend>
+            </fieldset>
+        </form>
+        <button class="main__button" type="start"><a>comenzar</a></button>
+    </div>
     </main>
     <footer class="footer">
       <p class="footer__copyright">Awesome profile-cards © 2018</p>
