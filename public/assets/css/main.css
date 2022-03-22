@@ -41,7 +41,6 @@
     width: 268px;
     height: 73.8px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
     margin-left: 20px;
@@ -63,59 +62,118 @@
     margin-left: 30%;
     margin-bottom: 40px; }
 
-.design__header {
-  text-transform: uppercase;
-  width: 65px;
-  height: 24px;
-  margin: 0 67px 22px 10px;
-  font-family: OpenSans-SemiBold;
-  font-size: 18px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #54585a; }
+.form {
+  margin: 30px 20px;
+  padding: 27px 19px 30px 20px; }
 
-.design__text {
-  text-transform: uppercase;
-  width: 62px;
-  height: 19px;
-  margin: 22px 82px 32px 0;
-  font-family: OpenSans;
+.design {
+  width: 320px; }
+  .design__header {
+    text-transform: uppercase;
+    width: 65px;
+    height: 24px;
+    margin: 0 67px 22px 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #54585a; }
+  .design__legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .design__colors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px; }
+  .design__text {
+    text-transform: uppercase;
+    width: 62px;
+    height: 19px;
+    margin: 0px 82px 32px 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #54585a; }
+  .design__container {
+    display: flex;
+    flex-direction: row; }
+    .design__container--2 {
+      padding: 20px 0px; }
+  .design__rectangle {
+    width: 30px;
+    height: 25px; }
+    .design__rectangle--1 {
+      background-color: #114e4e; }
+    .design__rectangle--2 {
+      background-color: #438792; }
+    .design__rectangle--3 {
+      background-color: #a2deaf; }
+    .design__rectangle--4 {
+      background-color: #420101; }
+    .design__rectangle--5 {
+      background-color: #bd1010; }
+    .design__rectangle--6 {
+      background-color: #e95626; }
+    .design__rectangle--7 {
+      background-color: #3e5b65; }
+    .design__rectangle--8 {
+      background-color: #eab052; }
+    .design__rectangle--9 {
+      background-color: #a0c0cf; }
+
+.palette {
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+  margin-right: 10px; }
+
+.fill {
+  font-family: "Open Sans", sans-serif;
+  color: #114e4e;
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #54585a; }
-
-.design__container {
+  gap: 20px;
+  width: 320px;
   display: flex;
-  flex-direction: row; }
+  flex-direction: column;
+  justify-content: flex-start; }
 
-.design__rectangle {
-  width: 30px;
-  height: 25px; }
-  .design__rectangle--1 {
-    background-color: #114e4e; }
-  .design__rectangle--2 {
-    background-color: #438792; }
-  .design__rectangle--3 {
-    background-color: #a2deaf; }
-  .design__rectangle--4 {
-    background-color: #420101; }
-  .design__rectangle--5 {
-    background-color: #bd1010; }
-  .design__rectangle--6 {
-    background-color: #e95626; }
-  .design__rectangle--7 {
-    background-color: #3e5b65; }
-  .design__rectangle--8 {
-    background-color: #eab052; }
-  .design__rectangle--9 {
-    background-color: #a0c0cf; }
+.field {
+  gap: 7px;
+  display: flex;
+  flex-direction: column; }
+  .field__placeholder {
+    height: 30px;
+    padding: 3px 7px;
+    border: solid 1px #a2deaf;
+    color: #c5c5c5;
+    font-family: "Open Sans", sans-serif; }
+
+.add_image {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px; }
+  .add_image__button {
+    width: 140px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    background-color: #e17334;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32); }
+  .add_image__checkbox {
+    height: 30px;
+    border: solid 1px #a2deaf; }
 
 .footer {
   display: flex;
@@ -129,5 +187,9 @@
   .footer__logo {
     width: 150px;
     margin-top: 30px; }
+
+.design__icon {
+  font-family: "Font Awesome 5 Free";
+  color: #e17334; }
 
 /*# sourceMappingURL=main.css.map */

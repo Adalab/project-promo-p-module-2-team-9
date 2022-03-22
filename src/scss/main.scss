@@ -3,6 +3,7 @@
 @import "components/code";
 @import "components/links";
 @import "layout/main";
+@import "layout/form";
 @import "layout/profile";
 @import "layout/design";
 @import "layout/fill";
@@ -10,3 +11,8 @@
 @import "layout/header";
 @import "layout/footer";
 @import "pages/index";
+
+.design__icon {
+  font-family: "Font Awesome 5 Free";
+  color: $dull-orange;
+}

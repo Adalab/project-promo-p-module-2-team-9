@@ -1,0 +1,52 @@
+.fill {
+  font-family: $font-family;
+  color: $dark-green-blue;
+  font-size: 14px;
+  gap: 20px;
+  width: 320px;
+  //   margin: 457px 0 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+// .legend {
+//   font-family: $font-family;
+//   color: $gun-metal;
+//   text-transform: capitalize;
+//   padding: 30px;
+// }
+.field {
+  // margin: 0 020px;
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
+  &__placeholder {
+    height: 30px;
+    padding: 3px 7px;
+    border: solid 1px $hospital-green;
+    color: #c5c5c5;
+    font-family: $font-family;
+  }
+}
+
+.add_image {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+  &__button {
+    width: 140px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    background-color: $dull-orange;
+    font-family: $font-family;
+    color: $whitetwo;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  }
+  &__checkbox {
+    height: 30px;
+    border: solid 1px $hospital-green;
+  }
+}
