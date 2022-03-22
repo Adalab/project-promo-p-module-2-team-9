@@ -1,10 +1,12 @@
 .design {
+  width: 320px;
+
   &__header {
     text-transform: uppercase;
     width: 65px;
     height: 24px;
     margin: 0 67px 22px 10px;
-    font-family: OpenSans-SemiBold;
+    font-family: $font-family;
     font-size: 18px;
     font-weight: 600;
     font-stretch: normal;
@@ -14,12 +16,25 @@
     color: $gun-metal;
   }
 
+  &__legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__colors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+  }
+
   &__text {
     text-transform: uppercase;
     width: 62px;
     height: 19px;
-    margin: 22px 82px 32px 0;
-    font-family: OpenSans;
+    margin: 0px 82px 32px 0;
+    font-family: $font-family;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -32,6 +47,10 @@
   &__container {
     display: flex;
     flex-direction: row;
+
+    &--2 {
+      padding: 20px 0px;
+    }
   }
 
   &__rectangle {
@@ -74,4 +93,11 @@
       background-color: $light-grey-blue;
     }
   }
+}
+
+.palette {
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+  margin-right: 10px;
 }
