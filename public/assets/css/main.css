@@ -230,6 +230,21 @@
     left: 50%;
     transform: translateX(-50%); }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media all and (min-width: 768px) {
+    .header {
+      align-items: flex-start; } }
+  .header__logo {
+    width: 200px;
+    height: 50px;
+    margin: 30px 0; }
+    @media all and (min-width: 768px) {
+      .header__logo {
+        margin-left: 40px; } }
+
 .footer {
   display: flex;
   flex-direction: column;
