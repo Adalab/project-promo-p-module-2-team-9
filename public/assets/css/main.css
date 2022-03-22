@@ -63,12 +63,13 @@
     margin-bottom: 40px; }
 
 .form {
-  margin: 30px 20px;
+  margin: 30px 20px 0px;
   padding: 27px 19px 30px 20px; }
 
 .design {
   width: 320px;
-  border-bottom: 100%; }
+  border-bottom: 100%;
+  border-bottom: 1px solid #d8d8d8; }
   .design__header {
     text-transform: uppercase;
     width: 100%;
@@ -84,7 +85,8 @@
   .design__legend {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    height: 50px; }
     .design__legend__container {
       width: 320px; }
   .design__icon {
@@ -112,6 +114,8 @@
     flex-direction: row; }
     .design__container--2 {
       padding: 20px 0px; }
+    .design__container--3 {
+      margin-bottom: 25px; }
   .design__rectangle {
     width: 30px;
     height: 25px; }
@@ -133,17 +137,11 @@
       background-color: #eab052; }
     .design__rectangle--9 {
       background-color: #a0c0cf; }
-  .design__bottom {
-    width: 100%;
-    height: 1px;
-    margin: 30px 0 10px;
-    background-color: #d8d8d8; }
-
-.palette {
-  position: relative;
-  top: 50%;
-  transform: translateY(50%);
-  margin-right: 10px; }
+  .design__palette {
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+    margin-right: 10px; }
 
 .fill {
   font-family: "Open Sans", sans-serif;
@@ -186,10 +184,13 @@
 
 .share {
   width: 320px;
-  position: relative; }
+  height: 150px;
+  position: relative;
+  border-bottom: 1px solid #d8d8d8; }
   .share__header {
     text-transform: uppercase;
     width: 100%;
+    margin-top: 10px;
     height: 24px;
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
@@ -209,11 +210,25 @@
       width: 320px; }
   .share__icon {
     color: #e17334; }
-  .share__bottom {
-    width: 100%;
-    height: 1px;
-    margin: 30px 0px;
-    background-color: #d8d8d8; }
+  .share__button {
+    width: 199px;
+    height: 50px;
+    padding: 13px 18px 13px 17px;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    background-color: #e17334;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    position: relative;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%); }
 
 .footer {
   display: flex;

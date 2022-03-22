@@ -1,10 +1,13 @@
 .share {
   width: $mobile-width;
+  height: 150px;
   position: relative;
+  border-bottom: 1px solid $white-grey;
 
   &__header {
     text-transform: uppercase;
     width: 100%;
+    margin-top: 10px;
     height: 24px;
     font-family: $font-family;
     font-size: 18px;
@@ -32,10 +35,26 @@
     color: $dull-orange;
   }
 
-  &__bottom {
-    width: 100%;
-    height: 1px;
-    margin: 30px 0px;
-    background-color: $white-grey;
+  &__button {
+    width: 199px;
+    height: 50px;
+    padding: 13px 18px 13px 17px;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    background-color: $dull-orange;
+
+    color: $whitetwo;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-transform: uppercase;
+
+    position: relative;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
