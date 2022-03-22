@@ -1,11 +1,11 @@
-.form {
+.fill {
   font-family: $font-family;
   color: $dark-green-blue;
   font-size: 14px;
   gap: 20px;
   width: 320px;
   //   margin: 457px 0 0;
-  padding: 27px 19px 30px 20px;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -17,7 +17,7 @@
 //   padding: 30px;
 // }
 .field {
-  margin: 0 020px;
+  // margin: 0 020px;
   gap: 7px;
   display: flex;
   flex-direction: column;

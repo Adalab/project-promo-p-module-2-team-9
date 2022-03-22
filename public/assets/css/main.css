@@ -48,6 +48,10 @@
     margin-left: 30%;
     margin-bottom: 20px; }
 
+.form {
+  margin: 30px 20px;
+  padding: 27px 19px 30px 20px; }
+
 .design__header {
   text-transform: uppercase;
   width: 65px;
@@ -102,19 +106,17 @@
   .design__rectangle--9 {
     background-color: #a0c0cf; }
 
-.form {
+.fill {
   font-family: "Open Sans", sans-serif;
   color: #114e4e;
   font-size: 14px;
   gap: 20px;
   width: 320px;
-  padding: 27px 19px 30px 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start; }
 
 .field {
-  margin: 0 020px;
   gap: 7px;
   display: flex;
   flex-direction: column; }
