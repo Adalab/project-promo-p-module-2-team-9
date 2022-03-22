@@ -53,7 +53,7 @@
     font-size: 12px; }
   .main__button {
     background-color: #438792;
-    color: #ffffff;
+    color: #fff;
     border: 0;
     border-radius: 21px;
     width: 129px;
@@ -67,12 +67,12 @@
   padding: 27px 19px 30px 20px; }
 
 .design {
-  width: 320px; }
+  width: 320px;
+  border-bottom: 100%; }
   .design__header {
     text-transform: uppercase;
-    width: 65px;
+    width: 100%;
     height: 24px;
-    margin: 0 67px 22px 10px;
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -85,6 +85,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
+    .design__legend__container {
+      width: 320px; }
+  .design__icon {
+    color: #e17334; }
   .design__colors {
     display: flex;
     flex-direction: row;
@@ -129,6 +133,11 @@
       background-color: #eab052; }
     .design__rectangle--9 {
       background-color: #a0c0cf; }
+  .design__bottom {
+    width: 100%;
+    height: 1px;
+    margin: 30px 0 10px;
+    background-color: #d8d8d8; }
 
 .palette {
   position: relative;
@@ -169,11 +178,42 @@
     border-radius: 3px;
     background-color: #e17334;
     font-family: "Open Sans", sans-serif;
-    color: #ffffff;
+    color: #fff;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32); }
   .add_image__checkbox {
     height: 30px;
     border: solid 1px #a2deaf; }
+
+.share {
+  width: 320px;
+  position: relative; }
+  .share__header {
+    text-transform: uppercase;
+    width: 100%;
+    height: 24px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #54585a; }
+  .share__legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 0px; }
+    .share__legend__container {
+      width: 320px; }
+  .share__icon {
+    color: #e17334; }
+  .share__bottom {
+    width: 100%;
+    height: 1px;
+    margin: 30px 0px;
+    background-color: #d8d8d8; }
 
 .footer {
   display: flex;
@@ -183,7 +223,9 @@
   background-color: white;
   font-family: "Open Sans", sans-serif;
   color: #6b6b6b;
-  padding: 30px 0 45px 0; }
+  padding: 30px 0 45px 0;
+  border: solid 1px #d8d8d8;
+  width: 320px; }
   .footer__logo {
     width: 150px;
     margin-top: 30px; }

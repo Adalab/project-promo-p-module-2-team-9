@@ -1,0 +1,41 @@
+.share {
+  width: $mobile-width;
+  position: relative;
+
+  &__header {
+    text-transform: uppercase;
+    width: 100%;
+    height: 24px;
+    font-family: $font-family;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $gun-metal;
+  }
+
+  &__legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 0px;
+
+    &__container {
+      width: $mobile-width;
+    }
+  }
+
+  &__icon {
+    color: $dull-orange;
+  }
+
+  &__bottom {
+    width: 100%;
+    height: 1px;
+    margin: 30px 0px;
+    background-color: $white-grey;
+  }
+}
