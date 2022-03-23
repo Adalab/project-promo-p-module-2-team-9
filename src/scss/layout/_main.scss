@@ -27,6 +27,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
     &__box{
         list-style-type: none;
@@ -43,7 +44,7 @@
 
         &--icon{
             color: $dull-orange;
-        }
+        }  
     }
     &__text2{
         color: $dark-green-blue;

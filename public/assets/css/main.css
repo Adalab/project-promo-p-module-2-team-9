@@ -32,7 +32,8 @@
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    text-align: center; }
   .main__box {
     list-style-type: none;
     font-family: "Font Awesome 5 Free";
