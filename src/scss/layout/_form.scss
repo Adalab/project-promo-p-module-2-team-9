@@ -1,4 +1,8 @@
 .form {
   margin: 30px 20px 0px;
   padding: 27px 19px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

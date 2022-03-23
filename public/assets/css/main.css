@@ -64,7 +64,11 @@
 
 .form {
   margin: 30px 20px 0px;
-  padding: 27px 19px 30px 20px; }
+  padding: 27px 19px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .design {
   width: 320px;
@@ -142,6 +146,9 @@
     top: 50%;
     transform: translateY(50%);
     margin-right: 10px; }
+
+.collapsed {
+  display: none; }
 
 .fill {
   font-family: "Open Sans", sans-serif;
