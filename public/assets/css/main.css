@@ -160,6 +160,10 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start; }
+  .fill__legend--name {
+    font-family: "Open Sans", sans-serif;
+    color: #54585a;
+    text-transform: capitalize; }
 
 .field {
   gap: 7px;

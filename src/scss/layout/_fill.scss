@@ -5,17 +5,18 @@
   gap: 20px;
   width: $mobile-width;
   //   margin: 457px 0 0;
-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  &__legend {
+    &--name {
+      font-family: $font-family;
+      color: $gun-metal;
+      text-transform: capitalize;
+      //padding: 30px;
+    }
+  }
 }
-// .legend {
-//   font-family: $font-family;
-//   color: $gun-metal;
-//   text-transform: capitalize;
-//   padding: 30px;
-// }
 .field {
   // margin: 0 020px;
   gap: 7px;
