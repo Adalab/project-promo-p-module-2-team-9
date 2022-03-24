@@ -1,33 +1,51 @@
 .fill {
   font-family: $font-family;
   color: $dark-green-blue;
-
-  gap: 20px;
-  width: $mobile-width;
-  //   margin: 457px 0 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  width: $mobile-width;
+  border-bottom: 100%;
+  border-bottom: 1px solid $white-grey;
   &__legend {
-    &--name {
-      font-family: $font-family;
-      color: $gun-metal;
-      text-transform: uppercase;
-      font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    &--title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      &--icon {
+        color: $dull-orange;
+      }
+      &--name {
+        font-family: $font-family;
+        color: $gun-metal;
+        text-transform: uppercase;
+        font-size: 18px;
+      }
     }
   }
 }
+
 .field {
-  // margin: 0 020px;
-  gap: 7px;
-  display: flex;
-  flex-direction: column;
-  &__placeholder {
-    height: 30px;
-    padding: 3px 7px;
-    border: solid 1px $hospital-green;
-    color: #c5c5c5;
-    font-family: $font-family;
+  width: 100%;
+  gap: 20px;
+  &__item {
+    gap: 7px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    &--placeholder {
+      height: 30px;
+      padding: 3px 7px;
+      border: solid 1px $hospital-green;
+      color: #c5c5c5;
+      font-family: $font-family;
+    }
   }
 }
 
@@ -46,8 +64,9 @@
     color: $whitetwo;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
   }
-  &__checkbox {
+  &__photo-preview {
     height: 30px;
+    width: 30px;
     border: solid 1px $hospital-green;
   }
 }

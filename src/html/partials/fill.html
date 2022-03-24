@@ -1,17 +1,19 @@
 <fieldset class="fill">
-  <div>
-    <legend class="fill__legend js__fill-legend">
-      <i class="main__icon fa-regular fa-keyboard"></i>
-      <i class="fa-solid fa-angle-down"></i>
-      <h2 class="fill__legend--name">Rellena</h2>
-      <i class="fa-solid fa-angle-up hidden"></i>
-    </legend>
-  </div>
-  <div class="js__field">
-    <div class="field">
+  <legend class="fill__legend js__fill-legend">
+    <div class="fill__legend--title">
+      <i class="fill__legend--title--icon fas fa-keyboard"></i>
+      <h2 class="fill__legend--title--name">Rellena</h2>
+    </div>
+    <div>
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-chevron-up collapsed"></i>
+    </div>
+  </legend>
+  <div class="js__field field">
+    <div class="field__item">
       <label for="name">Nombre completo</label>
       <input
-        class="field__placeholder"
+        class="field__item--placeholder"
         id="name"
         type="text"
         name="name"
@@ -19,10 +21,10 @@
         required
       />
     </div>
-    <div class="field">
+    <div class="field__item">
       <label for="job">Puesto</label>
       <input
-        class="field__placeholder"
+        class="field__item--placeholder"
         id="job"
         type="text"
         name="job"
@@ -30,23 +32,18 @@
         required
       />
     </div>
-    <div class="field">
+    <div class="field__item">
       <label for="proflie_image">Imagen de perfil</label>
       <div class="add_image">
         <input class="add_image__button" type="button" value="Añadir imagen" />
         <!-- Este recuadro funciona con js -->
-        <input
-          class="add_image__checkbox"
-          type="checkbox"
-          value="checkbox"
-          name="added_image"
-        />
+        <div class="add_image__photo-preview"></div>
       </div>
     </div>
-    <div class="field">
+    <div class="field__item">
       <label for="email">Email</label>
       <input
-        class="field__placeholder"
+        class="field__item--placeholder"
         id="email"
         type="email"
         name="email"
@@ -54,30 +51,30 @@
         required
       />
     </div>
-    <div class="field">
+    <div class="field__item">
       <label for="phone">Teléfono</label>
       <input
-        class="field__placeholder"
+        class="field__item--placeholder"
         id="phone"
         type="tel"
         name="phone"
         placeholder="Ej: 555-55-55-55"
       />
     </div>
-    <div class="field">
+    <div class="field__item">
       <label for="linkedin">Linkedin</label>
       <input
-        class="field__placeholder"
+        class="field__item--placeholder"
         id="linkedin"
         type="text"
         name="linkedin"
         placeholder="Ej: linkedin.com/in/sally.hill"
       />
     </div>
-    <div class="field">
+    <div class="field__item">
       <label for="github">Github</label>
       <input
-        class="field__placeholder"
+        class="field__item--placeholder"
         id="github"
         type="text"
         name="github"
