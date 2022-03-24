@@ -1,6 +1,7 @@
 .main{
     background-color: $white-four;
     width: 100%;
+
     &__landing{
         margin-left: 35px;
         margin-right: 35px;
@@ -44,18 +45,16 @@
 
         &--icon{
             color: $dull-orange;
-            display: flex;
-            flex-direction: column-reverse;
         }
         &--i{
-            order: 1;
+           
         }
     }
     &__text2{
         color: $dark-green-blue;
         font-family: $font-family;
         font-size: 12px;
-        order: 2;
+    
         }
 
     &__button{
@@ -69,4 +68,45 @@
     margin-left: 30%;
     margin-bottom: 40px;
     }
+
+@media all and (min-width: 768px){
+&__logo{
+    Width: 419px;
+    Height: 105px;
+    margin-left: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+&__title{
+    font-size: 24px;
+}
+
+&__text{
+    font-size: 16px;
+    padding-left: 196px;
+    padding-right: 196px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+&__box{
+    width: 325px;
+    height: 86px;
+    margin-left: 196px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+&__text2{
+    font-size: 16px;
+}
+&__button{
+    margin-left: 270px;
+    margin-top: 186px;
+    margin-bottom: 59px;
+}
+}
 }
