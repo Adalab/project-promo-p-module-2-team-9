@@ -26,10 +26,27 @@ designLegend.addEventListener('click', () => {
 
 const fillLegend = document.querySelector('.js__fill-legend');
 const fillForm = document.querySelector('.js__field');
+const arrowUp = document.querySelector('.js__arrowUp');
+const arrowDown = document.querySelector('.js__arrowDown');
+
+
 
 fillLegend.addEventListener('click', () => {
-  fillForm.classList.toggle('collapsed');
+  if (fillForm.classList.toggle('collapsed')) {
+    showArrowUp();
+  } else {
+    showArrowDown();
+  }
 });
+
+function showArrowUp () {
+  arrowUp.classList.remove('collapsed');
+}
+
+
+function showArrowDown () {
+  arrowDown.classList.add('collapsed');
+}
 
 
 //COLAPSABLE SHARE
