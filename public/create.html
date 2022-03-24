@@ -81,156 +81,169 @@
 
       <div class="form">
         <form action="">
-          <fieldset class="design js__design-fieldset collapsed">
-
+          <fieldset class="design js__design-fieldset">
             <!-- ARREGLAR COLLAPSED -->
 
             <legend class="design__legend js__design-legend">
-                <div class="design__legend__container">
-                    <i class="design__icon fa-solid fa-object-ungroup"></i>
-                    <h2 class="design__header">Diseña</h2>
-                </div>
-                <i class="fa-solid fa-angle-down"></i>
-                <i class="fa-solid fa-angle-up hidden"></i>
-
+              <div class="design__legend__container">
+                <i class="design__icon fa-solid fa-object-ungroup"></i>
+                <h2 class="design__header">Diseña</h2>
+              </div>
+              <i class="fa-solid fa-angle-down"></i>
+              <i class="fa-solid fa-angle-up hidden"></i>
             </legend>
 
-            <div class="design__colors">
-                <p class="design__text">Colores</p>
-                <div>
-
-                    <div class="design__container design__container--1">
-                      <input class="design__palette" type="radio" id="color1" name="palette" value="color1" />
-                      <div class="design__rectangle design__rectangle--1"></div>
-                      <div class="design__rectangle design__rectangle--2"></div>
-                      <div class="design__rectangle design__rectangle--3"></div>
-                    </div>
-
-                    <div class="design__container design__container--2">
-                      <input class="design__palette" type="radio" id="color2" name="palette" value="color2"/>
-                      <div class="design__rectangle design__rectangle--4"></div>
-                      <div class="design__rectangle design__rectangle--5"></div>
-                      <div class="design__rectangle design__rectangle--6"></div>
-                    </div>
-
-                    <div class="design__container design__container--3">
-                      <input class="design__palette" type="radio" id="color3" name="palette" value="color3" />
-                      <div class="design__rectangle design__rectangle--7"></div>
-                      <div class="design__rectangle design__rectangle--8"></div>
-                      <div class="design__rectangle design__rectangle--9"></div>
-                    </div>
-
+            <div class="design__colors js__design-colors">
+              <p class="design__text">Colores</p>
+              <div>
+                <div class="design__container design__container--1">
+                  <input
+                    class="design__palette"
+                    type="radio"
+                    id="color1"
+                    name="palette"
+                    value="color1"
+                  />
+                  <div class="design__rectangle design__rectangle--1"></div>
+                  <div class="design__rectangle design__rectangle--2"></div>
+                  <div class="design__rectangle design__rectangle--3"></div>
                 </div>
-            </div>
 
+                <div class="design__container design__container--2">
+                  <input
+                    class="design__palette"
+                    type="radio"
+                    id="color2"
+                    name="palette"
+                    value="color2"
+                  />
+                  <div class="design__rectangle design__rectangle--4"></div>
+                  <div class="design__rectangle design__rectangle--5"></div>
+                  <div class="design__rectangle design__rectangle--6"></div>
+                </div>
+
+                <div class="design__container design__container--3">
+                  <input
+                    class="design__palette"
+                    type="radio"
+                    id="color3"
+                    name="palette"
+                    value="color3"
+                  />
+                  <div class="design__rectangle design__rectangle--7"></div>
+                  <div class="design__rectangle design__rectangle--8"></div>
+                  <div class="design__rectangle design__rectangle--9"></div>
+                </div>
+              </div>
+            </div>
           </fieldset>
 
           <fieldset class="fill">
             <div>
-              <legend class="legend">
-                <i class="fa-solid fa-keyboard"></i>
-                <i class="fa-solid fa-angle-down">
-                  <h2>Rellena</h2>
-                  <i class="fa-solid fa-angle-up hidden"></i            
-                ></i>
+              <legend class="fill__legend js__fill-legend">
+                <i class="main__icon fa-regular fa-keyboard"></i>
+                <i class="fa-solid fa-angle-down"></i>
+                <h2 class="fill__legend--name">Rellena</h2>
+                <i class="fa-solid fa-angle-up hidden"></i>
               </legend>
             </div>
-            <div class="field">
-              <label for="name">Nombre completo</label>
-              <input
-                class="field__placeholder"
-                id="name"
-                type="text"
-                name="name"
-                placeholder="Ej: Sally Jill"
-                required
-              />
-            </div>
-            <div class="field">
-              <label for="job">Puesto</label>
-              <input
-                class="field__placeholder"
-                id="job"
-                type="text"
-                name="job"
-                placeholder="Ej: Front-end unicorn"
-                required
-              />
-            </div>
-            <div class="field">
-              <label for="proflie_image">Imagen de perfil</label>
-              <div class="add_image">
-                <input class="add_image__button" type="button" value="Añadir imagen" />
-                <!-- Este recuadro funciona con js -->
+            <div class="js__field">
+              <div class="field">
+                <label for="name">Nombre completo</label>
                 <input
-                  class="add_image__checkbox"
-                  type="checkbox"
-                  value="checkbox"
-                  name="added_image"
+                  class="field__placeholder"
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Ej: Sally Jill"
+                  required
                 />
               </div>
-            </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input
-                class="field__placeholder"
-                id="email"
-                type="email"
-                name="email"
-                placeholder="Ej: sally-hill@gmail.com"
-                required
-              />
-            </div>
-            <div class="field">
-              <label for="phone">Teléfono</label>
-              <input
-                class="field__placeholder"
-                id="phone"
-                type="tel"
-                name="phone"
-                placeholder="Ej: 555-55-55-55"
-              />
-            </div>
-            <div class="field">
-              <label for="linkedin">Linkedin</label>
-              <input
-                class="field__placeholder"
-                id="linkedin"
-                type="text"
-                name="linkedin"
-                placeholder="Ej: linkedin.com/in/sally.hill"
-              />
-            </div>
-            <div class="field">
-              <label for="github">Github</label>
-              <input
-                class="field__placeholder"
-                id="github"
-                type="text"
-                name="github"
-                placeholder="Ej: @sally-hill"
-              />
+              <div class="field">
+                <label for="job">Puesto</label>
+                <input
+                  class="field__placeholder"
+                  id="job"
+                  type="text"
+                  name="job"
+                  placeholder="Ej: Front-end unicorn"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="proflie_image">Imagen de perfil</label>
+                <div class="add_image">
+                  <input class="add_image__button" type="button" value="Añadir imagen" />
+                  <!-- Este recuadro funciona con js -->
+                  <input
+                    class="add_image__checkbox"
+                    type="checkbox"
+                    value="checkbox"
+                    name="added_image"
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input
+                  class="field__placeholder"
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Ej: sally-hill@gmail.com"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="phone">Teléfono</label>
+                <input
+                  class="field__placeholder"
+                  id="phone"
+                  type="tel"
+                  name="phone"
+                  placeholder="Ej: 555-55-55-55"
+                />
+              </div>
+              <div class="field">
+                <label for="linkedin">Linkedin</label>
+                <input
+                  class="field__placeholder"
+                  id="linkedin"
+                  type="text"
+                  name="linkedin"
+                  placeholder="Ej: linkedin.com/in/sally.hill"
+                />
+              </div>
+              <div class="field">
+                <label for="github">Github</label>
+                <input
+                  class="field__placeholder"
+                  id="github"
+                  type="text"
+                  name="github"
+                  placeholder="Ej: @sally-hill"
+                />
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="share">
-
-              <legend class="share__legend">
-                  <div class="share__legend__container">
-                      <i class="fa fa-share-alt"></i>
-                      <h2 class="share__header">Comparte</h2>
-                  </div>
-                  <i class="fa-solid fa-angle-down"></i>
-                  <i class="fa-solid fa-angle-up hidden"></i>
-            
-              </legend>
-
+            <legend class="share__legend js__share-legend">
+              <div class="share__legend__container">
+                <i class="fa fa-share-alt"></i>
+                <h2 class="share__header">Comparte</h2>
+              </div>
+              <i class="fa-solid fa-angle-down"></i>
+              <i class="fa-solid fa-angle-up hidden"></i>
+            </legend>
+            <div class="js__share">
               <button class="share__button">
-                  <!-- icon -->
-                  <p>Crear tarjeta</p>
+                <!-- icon -->
+                <p>Crear tarjeta</p>
               </button>
-
+            </div>
           </fieldset>
+
         </form>
       </div>
 
