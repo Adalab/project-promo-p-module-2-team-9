@@ -1,7 +1,7 @@
 .fill {
   font-family: $font-family;
   color: $dark-green-blue;
-  font-size: 14px;
+
   gap: 20px;
   width: $mobile-width;
   //   margin: 457px 0 0;
@@ -12,8 +12,8 @@
     &--name {
       font-family: $font-family;
       color: $gun-metal;
-      text-transform: capitalize;
-      //padding: 30px;
+      text-transform: uppercase;
+      font-size: 18px;
     }
   }
 }
