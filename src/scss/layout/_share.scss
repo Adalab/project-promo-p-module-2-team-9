@@ -1,8 +1,12 @@
 .share {
   width: $mobile-width;
-  height: 150px;
+  height: 164px;
   position: relative;
   border-bottom: 1px solid $white-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
 
   &__legend {
     display: flex;
@@ -10,31 +14,31 @@
     justify-content: space-between;
     align-items: center;
     height: 60px;
+    width: 100%;
 
     &__container {
-      width: $mobile-width;
       display: flex;
       align-items: center;
       gap: 10px;
-    }
 
-    &__icon {
-      color: $dull-orange;
-    }
+      &__icon {
+        color: $dull-orange;
+      }
 
-    &__text {
-      text-transform: uppercase;
-      width: 100%;
-      height: 24px;
-      font-family: $font-family;
-      font-size: 18px;
-      //font-weight: 600;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      color: $gun-metal;
+      &__text {
+        text-transform: uppercase;
+        height: 24px;
+        font-family: $font-family;
+        font-size: 18px;
+        color: $gun-metal;
+      }
     }
+  }
+
+  &__container {
+    width: $mobile-width;
+    position: relative;
+    top: 0px;
   }
 
   &__button {
@@ -44,23 +48,26 @@
     border-radius: 12px;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
     background-color: $dull-orange;
-
     color: $whitetwo;
-    font-size: 18px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-transform: uppercase;
-
-    position: relative;
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    transform: translateX(-50%);
+
+    &__text {
+      font-size: 18px;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-transform: uppercase;
+    }
   }
+}
+
+.collapsed {
+  display: none;
 }
