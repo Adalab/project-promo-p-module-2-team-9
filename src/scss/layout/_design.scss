@@ -3,33 +3,37 @@
   border-bottom: 100%;
   border-bottom: 1px solid $white-grey;
 
-  &__header {
-    text-transform: uppercase;
-    width: 100%;
-    height: 24px;
-    font-family: $font-family;
-    font-size: 18px;
-    //font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: $gun-metal;
-  }
-
   &__legend {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 50px;
+    align-items: center;
+    height: 60px;
 
     &__container {
       width: $mobile-width;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
-  }
 
-  &__icon {
-    color: $dull-orange;
+    &__icon {
+      color: $dull-orange;
+    }
+
+    &__text {
+      text-transform: uppercase;
+      width: 100%;
+      height: 24px;
+      font-family: $font-family;
+      font-size: 18px;
+      //font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $gun-metal;
+    }
   }
 
   &__colors {
