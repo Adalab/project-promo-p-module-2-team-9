@@ -44,12 +44,18 @@
 
         &--icon{
             color: $dull-orange;
-        }  
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &--i{
+            order: 1;
+        }
     }
     &__text2{
         color: $dark-green-blue;
         font-family: $font-family;
         font-size: 12px;
+        order: 2;
         }
 
     &__button{

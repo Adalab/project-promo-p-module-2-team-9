@@ -1,0 +1,67 @@
+.profile {
+  background-color: $pale-grey;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  &__button {
+    padding: 6px 12px 6px 25px;
+    border-color: $silver;
+    border: solid 1px $whitetwo;
+    border-radius: 15px;
+    background-color: $pale-grey;
+    margin: 60px 0 20px -165px;
+
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font-family: $font-family;
+    font-size: 12px;
+    color: $gun-metal;
+  }
+}
+
+.rectangle {
+//   margin-left: 45px; con flex no se centra
+  background-color: $whitetwo;
+  width: 240px;
+  height: 329px;
+  border: solid 1px rgba(0, 0, 0, 0.35);
+  margin-bottom: 40px;
+
+  &__title {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: $dark-green-blue;
+    font-family: $card-role;
+    margin-top: 20px;
+    margin-left: 20px;
+    // font-weight: 700; no funciona
+  }
+
+  &__subtitle {
+    font-family: $card-role;
+    font-size: 16px;
+    color: $gun-metal;
+    margin: 5px 0 10px 20px;
+  }
+
+  &__preview {
+    background-image: url(../images/example.jpg);
+    width: 240px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+}
+
+.in_process {
+    text-align: center;
+    margin: 10px 0 10px;
+    color: $gun-metal;
+    font-family: $card-role;
+
+}
