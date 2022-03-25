@@ -13,6 +13,7 @@
 
   @media all and (min-width: 768px) {
     height: 60px;
+    position: relative;
   }
 
   &__logo {
@@ -20,8 +21,7 @@
     // margin-top: 30px;
   }
 
-  @media all and (min-width: 768px){
-
+  @media all and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
     position: relative;
