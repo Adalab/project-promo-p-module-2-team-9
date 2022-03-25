@@ -1,9 +1,9 @@
 .profile {
   background-color: $pale-grey;
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &__button {
     padding: 6px 12px 6px 25px;
@@ -12,7 +12,6 @@
     border-radius: 15px;
     background-color: $pale-grey;
     margin: 60px 0 20px -165px;
-
   }
 
   &__text {
@@ -24,7 +23,7 @@
 }
 
 .rectangle {
-//   margin-left: 45px; con flex no se centra
+  //   margin-left: 45px; con flex no se centra
   background-color: $whitetwo;
   width: 240px;
   height: 329px;
@@ -56,12 +55,22 @@
     background-repeat: no-repeat;
     background-position: top;
   }
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &-item {
+        border: solid 2px $hospital-green;
+        border-radius: 16px;
+    }
+  }
 }
 
-.in_process {
-    text-align: center;
-    margin: 10px 0 10px;
-    color: $gun-metal;
-    font-family: $card-role;
+// .in_process {
+//     text-align: center;
+//     margin: 10px 0 10px;
+//     color: $gun-metal;
+//     font-family: $card-role;
 
-}
+// }
