@@ -19,16 +19,13 @@
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    padding: 24px 45px 56px 45px;
+    padding: 24px 45px;
   }
   &__logo {
     width: 103px;
     height: 40px;
-    margin-top: 10px;
-    margin-left: 550px;
   }
   &__copyright {
-    position: absolute;
     top: 10px;
   }
 }
