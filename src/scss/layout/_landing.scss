@@ -3,13 +3,9 @@
     width: 100%;
     height: 100%;
 
-   /* &__landing{
-        margin-left: 35px;
-        margin-right: 35px;
-    }*/
     &__logo{
         margin-top: 95px;
-        margin-left: 35px;
+        margin-left: 55px;
         position: static;
     }
     &__title{
@@ -20,30 +16,39 @@
         margin-top: 30px;
         margin-bottom: 0;
     }
+    &__text--box{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        margin-right: 40px;
+    }
     &__text{
         color: $dark-green-blue;
         font-family: $font-family;
         font-size: 13px;
-        margin-top: 5px;
-        margin-bottom: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        margin-top: 5px;  
+    }
+    &__container{
+        border: solid $softorange 1.6px;
+        border-radius: 4px;
+        width: 268px;
+        height: 73.8px;
+        margin-left: 60px;
+        position: relative;
     }
     &__box{
         list-style-type: none;
         font-family: "Font Awesome 5 Free";
-        border: solid $softorange 1.6px;
-        border-radius: 4px;
         width: 268px;
         height: 73.8px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-left: 20px;
+        padding-left: 15px;
         padding-right: 20px;
-        margin: 50px;
+        margin-top: 5px;
 
         &--icon{
             color: $dull-orange;
@@ -53,15 +58,19 @@
             justify-content: center;
             height: 73.8px;
             width: 268px;
+            padding-top: 10px;
+            padding-bottom: 20px;
         }
         &--icon i{
+            font-size: 22px;
         }
+
         &--words{
             color: $dark-green-blue;
             font-family: $font-family;
             font-size: 12.8px;
             }
-      }   
+    }   
    
     &__button{
     background-color: $dirty-blue;
@@ -71,8 +80,9 @@
     width: 129px;
     height: 42px;
     text-transform: uppercase;
-    margin-left: 30%;
+    margin-left: 35%;
     margin-bottom: 40px;
+    margin-top: 40px;
     }
 
 @media all and (min-width: 768px){
@@ -80,7 +90,7 @@
     width: 419px;
     height: 105px;
     margin-left: 150px;
-    display: flex;
+    display: static;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -88,16 +98,22 @@
 &__title{
     font-size: 24px;
 }
-
+&__text--box{
+    display: static;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 &__text{
     font-size: 16px;
     padding-left: 196px;
     padding-right: 196px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    display: static;
     
+    
+}
+&__container{
+    display: static;
 }
 &__box{
     width: 325px;
