@@ -1,11 +1,12 @@
 .main{
     background-color: $white-four;
     width: 100%;
+    height: 100%;
 
-    &__landing{
+   /* &__landing{
         margin-left: 35px;
         margin-right: 35px;
-    }
+    }*/
     &__logo{
         margin-top: 95px;
         margin-left: 35px;
@@ -14,7 +15,7 @@
     &__title{
         color: $dull-orange;
         font-family: $landing-title;
-        font-size: 19px;
+        font-size: 20px;
         text-align: center;
         margin-top: 30px;
         margin-bottom: 0;
@@ -33,30 +34,35 @@
     &__box{
         list-style-type: none;
         font-family: "Font Awesome 5 Free";
-        border: solid $dull-orange 1.6px;
+        border: solid $softorange 1.6px;
         border-radius: 4px;
         width: 268px;
         height: 73.8px;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        margin-left: 20px;
-        margin-bottom: 40px;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 50px;
 
         &--icon{
             color: $dull-orange;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            height: 73.8px;
+            width: 268px;
         }
-        &--i{
-           
+        &--icon i{
         }
-    }
-    &__text2{
-        color: $dark-green-blue;
-        font-family: $font-family;
-        font-size: 12px;
-    
-        }
-
+        &--words{
+            color: $dark-green-blue;
+            font-family: $font-family;
+            font-size: 12.8px;
+            }
+      }   
+   
     &__button{
     background-color: $dirty-blue;
     color: $whitetwo;
@@ -91,17 +97,21 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
 &__box{
     width: 325px;
     height: 86px;
     margin-left: 196px;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    text-align: center;
 }
 &__text2{
     font-size: 16px;
+    
 }
 &__button{
     margin-left: 270px;
