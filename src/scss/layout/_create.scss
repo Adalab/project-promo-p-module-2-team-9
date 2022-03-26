@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 856px;
-    background-color: $white-four;
+    background: linear-gradient(to bottom, $white-four, $whitetwo 9%);
     padding: 23px 40px 21px;
     .profile {
       grid-column-start: 2;
