@@ -2,9 +2,15 @@
   @media all and (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 856px;
+    grid-template-rows: 1000px;
+    gap: 30px;
     background: linear-gradient(to bottom, $white-four, $whitetwo 9%);
     padding: 23px 40px 21px;
+
+    // @media all and (min-width: 1024px) {
+    //   grid-template-columns: 1fr 1.5fr;
+    // }
+
     .profile {
       grid-column-start: 2;
       grid-row-start: 1;
@@ -16,7 +22,6 @@
       grid-row-start: 1;
       align-items: start;
       margin: 0;
-      padding-right: 30px;
     }
   }
 }
