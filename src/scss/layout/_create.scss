@@ -2,7 +2,7 @@
   @media all and (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1050px;
+    grid-template-rows: 1080px;
     gap: 30px;
     background: linear-gradient(to bottom, $white-four, $whitetwo 9%);
     padding: 23px 40px 21px;
@@ -16,6 +16,7 @@
       grid-row-start: 1;
       border-radius: 8px;
     }
+
     .form {
       display: grid;
       grid-column-start: 1;
