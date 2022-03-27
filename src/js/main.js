@@ -2,16 +2,6 @@
 
 // console.log('>> Ready :)');
 
-// const designLegend = document.querySelector ('.js__design-legend');
-
-// const designFieldset = document.querySelector ('.js__design-fieldset');
-
-// designLegend.addEventListener ("click", (event) => {
-
-//     designFieldset.classList.toggle (".collapsed");
-// });
-
-
 // COLAPSABLE DISEÑA
 
 const designLegend = document.querySelector('.js__design-legend');
@@ -26,27 +16,35 @@ designLegend.addEventListener('click', () => {
 
 const fillLegend = document.querySelector('.js__fill-legend');
 const fillForm = document.querySelector('.js__field');
-const arrowUp = document.querySelector('.js__arrowUp');
-const arrowDown = document.querySelector('.js__arrowDown');
-
-
+// const arrowUp = document.querySelector('.js__arrowUp');
+// const arrowDown = document.querySelector('.js__arrowDown');
 
 fillLegend.addEventListener('click', () => {
-  if (fillForm.classList.toggle('collapsed')) {
-    showArrowUp();
-  } else {
-    showArrowDown();
-  }
+  fillForm.classList.toggle('collapsed');
 });
 
-function showArrowUp () {
-  arrowUp.classList.remove('collapsed');
-}
+
+// function collapsedArrow(event) {
+//   fillLegend.addEventListener('click', () => {
+//     fillForm.classList.toggle('collapsed');
+//   });
+//   arrowDown.addEventListener('click',() => {
+//     arrowDown.classList.toggle('rotate');
+//   });
+// }
+
+// for (const document of legend) {
+//   collapsedArrow(event);
+// }
+
+// function showArrowUp () {
+//   arrowUp.classList.remove('collapsed');
+// }
 
 
-function showArrowDown () {
-  arrowDown.classList.add('collapsed');
-}
+// function showArrowDown () {
+//   arrowDown.classList.add('collapsed');
+// }
 
 
 //COLAPSABLE SHARE
