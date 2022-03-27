@@ -101,8 +101,7 @@
 }
 &__text{
     font-size: 16px;
-    padding-left: 196px;
-    padding-right: 196px;
+    max-width: 375px;
     display: flex;
 }
 &__container{
