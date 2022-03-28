@@ -1,0 +1,303 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Awesome Profile Cards Edition</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="https://as2.ftcdn.net/v2/jpg/03/14/86/81/1000_F_314868179_4G18ugvyNuUZYNlpjXm0y5rngnLUAxN4.jpg"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <img
+        class="header__logo"
+        src="./assets/images/tarjetas-molonas.png"
+        alt="Logo de tarjetas molonas"
+      />
+    </header>
+
+    <main class="create">
+      <section class="profile">
+        <button class="profile__button">
+          <i class="fas fa-trash-alt"></i>
+          <p class="profile__text">Reset</p>
+        </button>
+
+        <div class="rectangle">
+            <div class="rectangle__titles">
+              <h2 class="rectangle__titles-title">Nombre apellido</h2>
+              <h3 class="rectangle__titles-subtitle">Front-end developer</h3>
+            </div>
+         
+          <div class="rectangle__preview"></div>
+          <!-- <p class="in_process">
+                Aquí van los iconos :)
+            </p> -->
+          <ul class="rectangle__icons">
+            <li class="rectangle__icons-item">
+              <i class="rectangle__icons-item-size fas fa-mobile-alt"></i>
+            </li>
+            <li class="rectangle__icons-item">
+              <i class="rectangle__icons-item-size far fa-envelope"></i>
+            </li>
+            <li class="rectangle__icons-item">
+              <i class="rectangle__icons-item-size fab fa-linkedin-in"></i>
+            </li>
+            <li class="rectangle__icons-item">
+              <i class="rectangle__icons-item-size fab fa-github-alt"></i>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="form">
+        <form action="">
+          <fieldset class="design js__design-fieldset">
+            <legend class="design__legend js__design-legend">
+              <div class="design__legend__container">
+                <div>
+                  <i class="design__legend__container__icon far fa-object-ungroup"></i>
+                </div>
+                <h2 class="design__legend__container__text">Diseña</h2>
+              </div>
+              <div>
+                <i class="js__arrowDown fas fa-chevron-down"></i>
+                <i class="js__arrowUp fas fa-chevron-up collapsed"></i>
+              </div>
+            </legend>
+
+            <div class="design__colors js__design-colors collapsed">
+              <p class="design__text">Colores</p>
+              <div>
+                <div class="design__container design__container--1">
+                  <input
+                    class="design__palette"
+                    type="radio"
+                    id="color1"
+                    name="palette"
+                    value="color1"
+                  />
+                  <div class="design__rectangle design__rectangle--1"></div>
+                  <div class="design__rectangle design__rectangle--2"></div>
+                  <div class="design__rectangle design__rectangle--3"></div>
+                </div>
+
+                <div class="design__container design__container--2">
+                  <input
+                    class="design__palette"
+                    type="radio"
+                    id="color2"
+                    name="palette"
+                    value="color2"
+                  />
+                  <div class="design__rectangle design__rectangle--4"></div>
+                  <div class="design__rectangle design__rectangle--5"></div>
+                  <div class="design__rectangle design__rectangle--6"></div>
+                </div>
+
+                <div class="design__container design__container--3">
+                  <input
+                    class="design__palette"
+                    type="radio"
+                    id="color3"
+                    name="palette"
+                    value="color3"
+                  />
+                  <div class="design__rectangle design__rectangle--7"></div>
+                  <div class="design__rectangle design__rectangle--8"></div>
+                  <div class="design__rectangle design__rectangle--9"></div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="fill">
+            <legend class="fill__legend js__fill-legend">
+              <div class="fill__legend--title">
+                <i class="fill__legend--title--icon fas fa-keyboard"></i>
+                <h2 class="fill__legend--title--name">Rellena</h2>
+              </div>
+              <div>
+                <i
+                  class="js__arrowDown fill__legend--title--arrow fas fa-chevron-down"
+                ></i>
+                <i
+                  class="js__arrowUp fill__legend--title--arrow fas fa-chevron-up collapsed"
+                ></i>
+              </div>
+            </legend>
+            <div class="js__field field collapsed">
+              <div class="field__item">
+                <label for="name">Nombre completo</label>
+                <input
+                  class="field__item--placeholder"
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Ej: Sally Jill"
+                  required
+                />
+              </div>
+              <div class="field__item">
+                <label for="job">Puesto</label>
+                <input
+                  class="field__item--placeholder"
+                  id="job"
+                  type="text"
+                  name="job"
+                  placeholder="Ej: Front-end unicorn"
+                  required
+                />
+              </div>
+              <div class="field__item">
+                <label for="proflie_image">Imagen de perfil</label>
+                <div class="add_image">
+                  <input class="add_image__button" type="button" value="Añadir imagen" />
+                  <!-- Este recuadro funciona con js -->
+                  <div class="add_image__photo-preview"></div>
+                </div>
+              </div>
+              <div class="field__item">
+                <label for="email">Email</label>
+                <input
+                  class="field__item--placeholder"
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Ej: sally-hill@gmail.com"
+                  required
+                />
+              </div>
+              <div class="field__item">
+                <label for="phone">Teléfono</label>
+                <input
+                  class="field__item--placeholder"
+                  id="phone"
+                  type="tel"
+                  name="phone"
+                  placeholder="Ej: 555-55-55-55"
+                />
+              </div>
+              <div class="field__item">
+                <label for="linkedin">Linkedin</label>
+                <input
+                  class="field__item--placeholder"
+                  id="linkedin"
+                  type="text"
+                  name="linkedin"
+                  placeholder="Ej: linkedin.com/in/sally.hill"
+                />
+              </div>
+              <div class="field__item">
+                <label for="github">Github</label>
+                <input
+                  class="field__item--placeholder"
+                  id="github"
+                  type="text"
+                  name="github"
+                  placeholder="Ej: @sally-hill"
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="share">
+            <legend class="share__legend js__share-legend">
+              <div class="share__legend__container">
+                <i class="share__legend__container__icon fa fa-share-alt"></i>
+                <h2 class="share__legend__container__text">Comparte</h2>
+              </div>
+
+              <div>
+                <i class="js__arrowDown fas fa-chevron-down"></i>
+                <i class="js__arrowUp fas fa-chevron-up collapsed"></i>
+              </div>
+            </legend>
+
+            <article class="js__share share__article collapsed">
+
+              <div class="share__container">
+                <button class="share__container--button">
+                  <i class="share__container--button__icon far fa-address-card"></i>
+                  <p class="share__container--button__text">Crear tarjeta</p>
+                </button>
+              </div>
+
+              <div class="hidden share__card">
+                <p class="share__card__title">La tarjeta ha sido creada:</p>
+                <a
+                  class="share__card__link"
+                  href="https://awesome-profile-card.com?id=A456DF0001"
+                  >https://awesome-profile-card.com?id=A456DF0001</a
+                >
+                <div class="share__card__twitter">
+                  <button class="share__card__twitter--button">
+                      <i class="fab fa-twitter"></i>
+                      <p class="hare__card__twitter--button--text">Compartir en twitter</p>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+
+          </fieldset>
+
+        </form>
+      </div>
+
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">Awesome profile-cards © 2018</p>
+      <img
+        class="footer__logo"
+        src="./assets/images/logo-adalab.png"
+        alt="Logo de Adalab"
+        title="Adalab"
+      />
+    </footer>
+
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
