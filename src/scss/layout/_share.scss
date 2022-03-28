@@ -2,11 +2,11 @@
   width: $mobile-width;
   //height: 164px;
   position: relative;
-  border-bottom: 1px solid $white-grey;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
+  border-bottom: 1px solid $white-grey;
 
   &__legend {
     display: flex;
@@ -20,8 +20,6 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      // border-bottom: 1px solid $white-grey;
-
       &__icon {
         color: $dull-orange;
       }
@@ -88,6 +86,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // border-bottom: 1px solid $white-grey;
 
     &__title {
       width: 219px;
