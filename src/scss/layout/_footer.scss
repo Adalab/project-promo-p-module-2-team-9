@@ -21,7 +21,7 @@
     // margin-top: 30px;
   }
 
-  @media all and (min-width: 768px) {
+  @media all and (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     position: relative;

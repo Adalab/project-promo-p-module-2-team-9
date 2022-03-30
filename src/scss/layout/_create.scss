@@ -1,5 +1,5 @@
 .create {
-  @media all and (min-width: 768px) {
+  @media all and (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1080px;
@@ -7,7 +7,7 @@
     background: linear-gradient(to bottom, $white-four, $whitetwo 9%);
     padding: 23px 40px 21px;
 
-    @media all and (min-width: 1024px) {
+    @media all and (min-width: $desktop-width) {
       grid-template-columns: 1fr 1.5fr;
     }
 

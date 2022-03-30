@@ -1,74 +1,74 @@
-.main{
-    background-color: $white-four;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.main {
+  background-color: $white-four;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-    &__logo{
-        width: 250px;
-        height: 63px;
-        box-sizing: border-box;
-        margin-top: 95px;
+  &__logo {
+    width: 250px;
+    height: 63px;
+    box-sizing: border-box;
+    margin-top: 95px;
+  }
+  &__title {
+    color: $dull-orange;
+    font-family: $landing-title;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  &__text--box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 40px;
+    position: static;
+  }
+  &__text {
+    color: $dark-green-blue;
+    font-family: $font-family;
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  &__container {
+    border: solid $softorange 1.6px;
+    border-radius: 4px;
+    position: static;
+  }
+  &__box {
+    list-style-type: none;
+    font-family: "Font Awesome 5 Free";
+    width: 268px;
+    height: 73.8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--icon {
+      color: $dull-orange;
+      font-size: 22px;
+      height: 73.8px;
+      width: 268px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
-    &__title{
-        color: $dull-orange;
-        font-family: $landing-title;
-        font-size: 20px;
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 0;
+    &--words {
+      color: $dark-green-blue;
+      font-family: $font-family;
+      font-size: 12.8px;
     }
-    &__text--box{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin-bottom: 20px;
-        margin-left: 50px;
-        margin-right: 40px;
-        position: static;
-    }
-    &__text{
-        color: $dark-green-blue;
-        font-family: $font-family;
-        font-size: 13px;
-        margin-top: 5px; 
-    }
-    &__container{
-        border: solid $softorange 1.6px;
-        border-radius: 4px;
-       position: static;
-    }
-    &__box{
-        list-style-type: none;
-        font-family: "Font Awesome 5 Free";
-        width: 268px;
-        height: 73.8px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        &--icon{
-            color: $dull-orange;
-            font-size: 22px;
-            height: 73.8px;
-            width: 268px;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-        &--words{
-            color: $dark-green-blue;
-            font-family: $font-family;
-            font-size: 12.8px;
-            }
-    }   
-    &__button{
+  }
+  &__button {
     background-color: $dirty-blue;
     color: $whitetwo;
     border: 0;
@@ -81,55 +81,54 @@
     margin-top: 40px;
   }
 
-@media all and (min-width: 768px){
-&__logo{
-    width: 419px;
-    height: 105px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-&__title{
-    font-size: 24px;
-}
-&__text--box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-&__text{
-    font-size: 16px;
-    max-width: 375px;
-    display: flex;
-}
-&__container{
-    width: 325px;
-    height: 86px
-}
-&__box{
-    margin-left: 10px;
-    margin-top: 8px;
-    display: flex;
-    justify-content: space-between;
-    &--icon{
+  @media all and (min-width: $tablet-width) {
+    &__logo {
+      width: 419px;
+      height: 105px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__text--box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    &__text {
+      font-size: 16px;
+      max-width: 375px;
+      display: flex;
+    }
+    &__container {
+      width: 325px;
+      height: 86px;
+    }
+    &__box {
+      margin-left: 10px;
+      margin-top: 8px;
+      display: flex;
+      justify-content: space-between;
+      &--icon {
         width: 32px;
         height: 29px;
         display: flex;
         align-items: center;
         padding-left: 20px;
+      }
+      &--words {
+        font-size: 16px;
+      }
     }
-    &--words{
-    font-size: 16px;
-    
+    &__button {
+      width: 129px;
+      height: 42px;
+      margin-top: 100px;
+      margin-bottom: 59px;
     }
-}
-&__button{
-    width: 129px;
-    height: 42px;
-    margin-top: 100px;
-    margin-bottom: 59px;
-}
-}
+  }
 }
