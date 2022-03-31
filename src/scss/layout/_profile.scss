@@ -16,8 +16,7 @@
     align-items: center;
     gap: 10px;
     color: $gun-metal;
-}
-  
+  }
 
   &__text {
     text-transform: uppercase;
@@ -95,3 +94,44 @@
 //     font-family: $card-role;
 
 // }
+
+.palette-2 {
+  .rectangle__titles {
+    border-color: $rusty-red;
+    .rectangle__titles-title {
+      color: $dried-blood;
+    }
+  }
+
+  .rectangle__icons-item {
+    color: $dried-blood;
+    border-color: $tomato;
+  }
+}
+
+.palette-3 {
+  .rectangle__titles {
+    border-color: $faded-orange;
+    .rectangle__titles-title {
+      color: $slate;
+    }
+  }
+  .rectangle__icons-item {
+    color: $slate;
+    border-color: $light-grey-blue;
+  }
+}
+
+.palette-1 {
+  .rectangle__titles {
+    border-color: $dirty-blue;
+    .rectangle__titles-title {
+      color: $dark-green-blue;
+    }
+  }
+
+  .rectangle__icons-item {
+    color: $dark-green-blue;
+    border-color: $hospital-green;
+  }
+}
