@@ -46,5 +46,3 @@ shareLegend.addEventListener('click', () => {
   designColors.classList.add('collapsed');
   fillForm.classList.add('collapsed');
 });
-
-

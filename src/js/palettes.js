@@ -1,23 +1,20 @@
 'use strict';
 
-// CONSTANTS FOR PROFILE COLOR CHANGE
-// const profileName = document.querySelector(".js-profileName");
-// const profileBorder = document.querySelector(".js-profileBorder");
-// const profileIcon = document.querySelector(".js-profileIcon");
-// const radioButton1 = document.querySelector(".js-radioButton1");
-// const radioButton2 = document.querySelector(".js-radioButton2");
-// const radioButton3 = document.querySelector(".js-radioButton3");
+// // CONSTANTS
+// const allRadioButtons = document.querySelectorAll(“.js-radio”);
+// const previewContainer = document.querySelector (“.js-preview”);
 
-// EVENT LISTENERS FOR PROFILE COLOR CHANGE
+// // HANDLING FUNCTION
+// function handleClickRadioUnique(event) {
+// 	console.log(`palette-${event.currentTarget.value}`);
+// 	const paletteClassToAdd = `palette-${event.currentTarget.value}`;
 
-// radioButton1.addEventListener('click', () => {
-//   --- code with instructions ---
-// });
+// 	previewContainer.classList.add(“palette-3”);
+// 	previewContainer.classList.remove(“palette-1”);
+// 	previewContainer.classList.remove(“palette-2”);
+// }
 
-// radioButton2.addEventListener('click', () => {
-//   --- code with instructions ---
-// });
-
-// radioButton3.addEventListener('click', () => {
-//   --- code with instructions ---
-// });
+// // LOOP
+// for(const eachRadioButton of allRadioButtons) {
+//     eachRadioButton.addEventListener(“click”, handleClickRadioUnique);
+// }
