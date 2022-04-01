@@ -1,22 +1,5 @@
 'use strict';
 
-// console.log('>> Ready :)');
-
-// CONSTANTS FOR DESIGN COLLAPSIBLE
-const designLegend = document.querySelector('.js__design-legend');
-const designColors = document.querySelector('.js__design-colors');
-const arrowDown1 = document.querySelector('.js__arrowDown1');
-
-// CONSTANTS FOR FILL COLLAPSIBLE
-const fillLegend = document.querySelector('.js__fill-legend');
-const fillForm = document.querySelector('.js__field');
-const arrowDown2 = document.querySelector('.js__arrowDown2');
-
-// CONSTANTS FOR SHARE COLLAPSIBLE
-const shareLegend = document.querySelector('.js__share-legend');
-const sharecontent = document.querySelector('.js__share');
-const arrowDown3 = document.querySelector('.js__arrowDown3');
-
 // DESIGN COLLAPSIBLE
 designLegend.addEventListener('click', () => {
   designColors.classList.toggle('collapsed');

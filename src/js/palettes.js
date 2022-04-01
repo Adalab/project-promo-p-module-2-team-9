@@ -1,9 +1,5 @@
 'use strict';
 
-// // CONSTANTS
-const allRadioButtons = document.querySelectorAll('.js-radio');
-const previewContainer = document.querySelector ('.js-preview');
-
 // HANDLING FUNCTION
 function handleClickRadioUnique(event) {
     console.log(`palette-${event.currentTarget.value}`);
