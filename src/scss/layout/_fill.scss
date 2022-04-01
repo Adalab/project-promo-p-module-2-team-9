@@ -57,21 +57,25 @@
   flex-direction: row;
   justify-content: flex-start;
   gap: 20px;
-  &__button {
-    width: 140px;
-    height: 30px;
-    border: none;
-    border-radius: 3px;
-    background-color: $dull-orange;
-    font-family: $font-family;
-    color: $whitetwo;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-  }
+  // &__button {
+  //   width: 140px;
+  //   height: 30px;
+  //   border: none;
+  //   border-radius: 3px;
+  //   background-color: $dull-orange;
+  //   font-family: $font-family;
+  //   color: $whitetwo;
+  //   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  // }
   &__photo-preview {
     height: 30px;
     width: 30px;
     border: solid 1px $hospital-green;
   }
+}
+
+.upload_button {
+  display: none
 }
 
 .collapsed {
@@ -80,4 +84,50 @@
 
 .rotate {
   transform: rotateX(180deg);
+}
+
+// GET IMAGE BUTTON - PREVIEW
+.action__upload-btn {
+  text-align: center;
+  // margin: 30px;
+  width: 140px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  background-color: $dull-orange;
+  font-family: $font-family;
+  color: $whitetwo;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  cursor: pointer;
+}
+.action__hiddenField {
+  /* Ocultamos el input de tipo "file" porque no podemos 
+  darle los estilos que queremos */
+  display: hidden;
+}
+
+// .profile {
+//   margin: 0 auto;
+//   display: flex;
+//   justify-content: center;
+// }
+
+.profile__image,
+.profile__preview {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #ccc;
+}
+.profile__image {
+  width: 300px;
+  height: 300px;
+}
+
+.profile__preview {
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
 }

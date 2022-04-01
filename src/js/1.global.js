@@ -18,3 +18,8 @@ const previewContainer = document.querySelector ('.js-preview');
 //4. Cancelar formulario
 const buttonCancelForm = document.querySelector('.js-btn-cancel');
 const reset = document.querySelector('.js-reset');
+//CONSTANTS PREVIEW PROFILE IMAGE/GET IMAGE BUTTON
+const fr = new FileReader();
+const fileField = document.querySelector('.js__profile-upload-btn');
+const profileImage = document.querySelector('.js__profile-image');
+const profilePreview = document.querySelector('.js__profile-preview');

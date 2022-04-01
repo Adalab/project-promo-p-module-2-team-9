@@ -34,17 +34,17 @@
       />
     </div>
     <div class="field__item">
-      <label for="proflie_image">Imagen de perfil</label>
-      <div class="add_image">
+      <div class="action action__upload-btn">
+        <label for="proflie_image">Imagen de perfil</label>
         <input
-          class="add_image__button"
-          type="button"
+          class="add_image__button action__hiddenField js__profile-upload-btn"
+          type="file"
           value="Añadir imagen"
-          id="photo"
+          id="profile_image"
         />
-        <!-- Este recuadro funciona con js -->
-        <div class="add_image__photo-preview"></div>
       </div>
+      <!-- Recuadro preview de la imagen  -->
+      <div class="add_image__photo-preview js__profile-preview"></div>
     </div>
     <div class="field__item">
       <label for="email">Email</label>
