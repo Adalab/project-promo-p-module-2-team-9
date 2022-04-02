@@ -14,7 +14,7 @@ const sharecontent = document.querySelector('.js__share');
 const arrowDown3 = document.querySelector('.js__arrowDown3');
 // CONSTANTS FOR PALETTES
 const allRadioButtons = document.querySelectorAll('.js-radio');
-const previewContainer = document.querySelector ('.js-preview');
+const previewContainer = document.querySelector('.js-preview');
 //4. RESET BUTTON
 const buttonCancelForm = document.querySelector('.js-btn-cancel');
 const reset = document.querySelector('.js-reset');
