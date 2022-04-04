@@ -52,24 +52,20 @@
   }
 }
 
+.image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
 .add_image {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   gap: 20px;
-  // &__button {
-  //   width: 140px;
-  //   height: 30px;ƒ
-  //   border: none;
-  //   border-radius: 3px;
-  //   background-color: $dull-orange;
-  //   font-family: $font-family;
-  //   color: $whitetwo;
-  //   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-  // }
   &__photo-preview {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border: solid 1px $hospital-green;
     background-size: cover;
     background-repeat: no-repeat;
@@ -92,22 +88,18 @@
 // GET IMAGE BUTTON - PREVIEW
 .action__upload-btn {
   text-align: center;
-  // margin: 30px;
+  line-height: 2rem;
   width: 140px;
-  height: 30px;
+  height: 40px;
   border: none;
   border-radius: 3px;
   background-color: $dull-orange;
   font-family: $font-family;
   color: $whitetwo;
-  text-align: center;
-  align-items: center;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
   cursor: pointer;
 }
 .action__hiddenField {
-  /* Ocultamos el input de tipo "file" porque no podemos 
-  darle los estilos que queremos */
   display: none;
 }
 
