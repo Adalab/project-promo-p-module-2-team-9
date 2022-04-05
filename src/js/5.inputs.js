@@ -15,15 +15,27 @@ const data = {
   phone: '',
   likedin: '',
   github: '',
-  // photo: '',
+  photo: '',
 };
 
 function renderPreview() {
   previewNameElement.innerHTML = data.name;
+  previewJobElement.innerHTML = data.job;
   previewEmailElement.href = `mailto: ${data.email}`;
+  previewPhoneElement.href = `tel: ${data.phone}`;
+  previewLinkedinElement.href = data.likedin;
+  previewGithubElement.href = data.github;
+  if (data.name === "") {previewNameElement.innerHTML = "Nombre Apellido"}
+  else {previewNameElement.innerHTML = data.name};
+
+  if (data.job === "") {previewJobElement.innerHTML = "Front-end developer"}
+  else {previewJobElement.innerHTML = data.job};
+
+  
 }
 
 function handleKeyupInputs(event) {
+  event.preventDefault();
   const elementWhereUserIsTyping = event.target;
   if (elementWhereUserIsTyping.name === 'name') {
     data.name = elementWhereUserIsTyping.value;
