@@ -13,7 +13,7 @@ const data = {
   job: '',
   email: '',
   phone: '',
-  likedin: '',
+  linkedin: '',
   github: '',
   photo: '',
 };
@@ -23,7 +23,7 @@ function renderPreview() {
   previewJobElement.innerHTML = data.job;
   previewEmailElement.href = `mailto: ${data.email}`;
   previewPhoneElement.href = `tel: ${data.phone}`;
-  previewLinkedinElement.href = data.likedin;
+  previewLinkedinElement.href = data.linkedin;
   previewGithubElement.href = data.github;
   if (data.name === "") {previewNameElement.innerHTML = "Nombre Apellido"}
   else {previewNameElement.innerHTML = data.name};
@@ -46,7 +46,7 @@ function handleKeyupInputs(event) {
   } else if (elementWhereUserIsTyping.name === 'phone') {
     data.phone = elementWhereUserIsTyping.value;
   } else if (elementWhereUserIsTyping.name === 'linkedin') {
-    data.likedin = elementWhereUserIsTyping.value;
+    data.linkedin = elementWhereUserIsTyping.value;
   } else if (elementWhereUserIsTyping.name === 'github') {
     data.github = elementWhereUserIsTyping.value;
   }
