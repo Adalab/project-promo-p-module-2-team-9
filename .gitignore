@@ -105,3 +105,4 @@ dist
 
 # Public Folder
 public
+.vscode

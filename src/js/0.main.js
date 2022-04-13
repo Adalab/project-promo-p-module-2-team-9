@@ -24,6 +24,14 @@ const fileField = document.querySelector('.js__profile-upload-btn');
 const profileImage = document.querySelector('.js__profile-image');
 const profilePreview = document.querySelector('.js__profile-preview');
 
+const inputs = document.querySelector('.js__inputs');
+const previewNameElement = document.querySelector('.js_name');
+const previewJobElement = document.querySelector('.js_job');
+const previewEmailElement = document.querySelector('.js_email');
+const previewPhoneElement = document.querySelector('.js_phone');
+const previewLinkedinElement = document.querySelector('.js_linkedin');
+const previewGithubElement = document.querySelector('.js_github');
+
 const btnShare = document.querySelector('.js-share-btn');
 const twitterBtn = document.querySelector('.js-twitter-button');
 let msg = document.querySelector('.js-message');
@@ -81,28 +89,18 @@ shareLegend.addEventListener('click', () => {
 
 // HANDLING FUNCTION
 function handleClickRadioUnique(event) {
-  console.log(`${event.currentTarget.value}`);
   const paletteClassToAdd = `palette-${event.currentTarget.value}`;
   data.palette = event.currentTarget.value;
   previewContainer.classList.remove('palette-1');
   previewContainer.classList.remove('palette-2');
   previewContainer.classList.remove('palette-3');
   previewContainer.classList.add(paletteClassToAdd);
-  console.log(data);
 }
 
 // LOOP
 for (const eachRadioButton of allRadioButtons) {
   eachRadioButton.addEventListener('click', handleClickRadioUnique);
 }
-
-const inputs = document.querySelector('.js__inputs');
-const previewNameElement = document.querySelector('.js_name');
-const previewJobElement = document.querySelector('.js_job');
-const previewEmailElement = document.querySelector('.js_email');
-const previewPhoneElement = document.querySelector('.js_phone');
-const previewLinkedinElement = document.querySelector('.js_linkedin');
-const previewGithubElement = document.querySelector('.js_github');
 
 function renderPreview() {
   //previewNameElement.innerHTML = data.name;
@@ -142,11 +140,12 @@ function handleKeyupInputs(event) {
   renderPreview();
 }
 
-inputs.addEventListener('keyup', handleKeyupInputs);
-
 //6.reset
 buttonCancelForm.addEventListener('click', (event) => {
   event.preventDefault();
+  previewContainer.classList.add('palette-1');
+  previewContainer.classList.remove('palette-2');
+  previewContainer.classList.remove('palette-3');
   const allResetInputs = document.querySelectorAll('.js-reset');
   for (const eachResetInput of allResetInputs) {
     eachResetInput.value = '';
@@ -182,7 +181,10 @@ function handleClickCreateBtn(event) {
         textCard.innerHTML = 'La tarjeta ha sido creada';
         urlTwitter.innerHTML = serverResp.cardURL;
         urlTwitter.href = serverResp.cardURL;
+        urlTwitter.classList.remove('hidden');
       }
+      console.log(data);
+      console.log(serverResp);
     });
 
   twitterBtn.addEventListener('click', (event) => {
@@ -192,6 +194,8 @@ function handleClickCreateBtn(event) {
   });
 }
 
+//Eventos
+inputs.addEventListener('keyup', handleKeyupInputs);
 btnShare.addEventListener('click', handleClickCreateBtn);
 
 //Incluir foto de avatar
