@@ -19,19 +19,22 @@ const data = {
 };
 
 function renderPreview() {
-  previewNameElement.innerHTML = data.name;
-  previewJobElement.innerHTML = data.job;
+  //previewNameElement.innerHTML = data.name;
+  //previewJobElement.innerHTML = data.job;
   previewEmailElement.href = `mailto: ${data.email}`;
   previewPhoneElement.href = `tel: ${data.phone}`;
   previewLinkedinElement.href = data.linkedin;
   previewGithubElement.href = data.github;
-  if (data.name === "") {previewNameElement.innerHTML = "Nombre Apellido"}
-  else {previewNameElement.innerHTML = data.name};
-
-  if (data.job === "") {previewJobElement.innerHTML = "Front-end developer"}
-  else {previewJobElement.innerHTML = data.job};
-
-  
+  if (data.name === '') {
+    previewNameElement.innerHTML = 'Nombre Apellido';
+  } else {
+    previewNameElement.innerHTML = data.name;
+  }
+  if (data.job === '') {
+    previewJobElement.innerHTML = 'Front-end developer';
+  } else {
+    previewJobElement.innerHTML = data.job;
+  }
 }
 
 function handleKeyupInputs(event) {
@@ -50,7 +53,6 @@ function handleKeyupInputs(event) {
   } else if (elementWhereUserIsTyping.name === 'github') {
     data.github = elementWhereUserIsTyping.value;
   }
-
   renderPreview();
 }
 
