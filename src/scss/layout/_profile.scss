@@ -27,7 +27,6 @@
 }
 
 .rectangle {
-  //   margin-left: 45px; con flex no se centra
   background-color: $whitetwo;
   width: 240px;
   height: 329px;
@@ -44,7 +43,6 @@
       font-family: $card-role;
       margin-top: 20px;
       margin-left: 20px;
-      // font-weight: 700; no funciona
     }
 
     &-subtitle {
@@ -80,20 +78,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      // &-size {
-      //   // align-items: center;
-      // }
     }
   }
 }
 
-// .in_process {
-//     text-align: center;
-//     margin: 10px 0 10px;
-//     color: $gun-metal;
-//     font-family: $card-role;
-
-// }
 .palette-1 {
   .rectangle__titles {
     border-color: $dirty-blue;
