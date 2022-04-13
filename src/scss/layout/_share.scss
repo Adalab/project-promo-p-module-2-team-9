@@ -89,7 +89,7 @@
 
     &__title {
       width: 219px;
-      height: 24px;
+      height: 80px;
       margin: 20px 14px 5px 10px;
       font-family: $font-family;
       text-align: center;
@@ -137,4 +137,9 @@
 .collapsed,
 .hidden {
   display: none;
+}
+
+.white {
+  background-color: $darkbrown;
+  opacity: 70%;
 }
