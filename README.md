@@ -1,4 +1,4 @@
-# PROJECT AWESOME PROFILE-CARDS
+# Project Awesome profile-cards
 
 # Descripción del proyecto
 
@@ -24,7 +24,7 @@ Algunas de las herramientas que utilizamos para la realización del proyecto fue
 
 # Realizado por:
 
-Analía Río
-Gema Mesas
-Iris Mireya
+Analía Río //
+Gema Mesas //
+Iris Mireya //
 Sandra Rial
