@@ -2,7 +2,7 @@
   @media all and (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1080px;
+    grid-template-rows: 768px;
     gap: 30px;
     background: linear-gradient(to bottom, $white-four, $whitetwo 9%);
     padding: 23px 40px 21px;
