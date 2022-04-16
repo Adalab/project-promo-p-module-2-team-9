@@ -64,6 +64,10 @@
     &--3 {
       margin-bottom: 25px;
     }
+
+    &--4 {
+      margin-bottom: 25px;
+    }
   }
 
   &__rectangle {
@@ -104,6 +108,15 @@
 
     &--9 {
       background-color: $light-grey-blue;
+    }
+    &--10 {
+      background-color: $codequetecode-green;
+    }
+    &--11 {
+      background-color: $codequetecode-black;
+    }
+    &--12 {
+      background-color: $codequetecode-orange;
     }
   }
 

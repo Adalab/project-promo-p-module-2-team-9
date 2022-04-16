@@ -94,6 +94,7 @@ function handleClickRadioUnique(event) {
   previewContainer.classList.remove('palette-1');
   previewContainer.classList.remove('palette-2');
   previewContainer.classList.remove('palette-3');
+  previewContainer.classList.remove('palette-4');
   previewContainer.classList.add(paletteClassToAdd);
 }
 
@@ -146,6 +147,7 @@ buttonCancelForm.addEventListener('click', (event) => {
   previewContainer.classList.add('palette-1');
   previewContainer.classList.remove('palette-2');
   previewContainer.classList.remove('palette-3');
+  previewContainer.classList.remove('palette-4');
   const allResetInputs = document.querySelectorAll('.js-reset');
   for (const eachResetInput of allResetInputs) {
     eachResetInput.value = '';
@@ -187,7 +189,7 @@ function handleClickCreateBtn(event) {
 
   twitterBtn.addEventListener('click', (event) => {
     event.preventDefault();
-    let url = `https://twitter.com/intent/tweet?text=He%20creado%20una%20tarjeta%20profesional.%20Conóceme!%20&url=${urlTwitter.href}`;
+    let url = `https://twitter.com/intent/tweet?text=He%20creado%20una%20tarjeta%20profesional.%20¡Conóceme!%20&url=${urlTwitter.href}`;
     window.location.href = url;
   });
 }

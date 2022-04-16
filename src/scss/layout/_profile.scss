@@ -1,5 +1,5 @@
 .profile {
-  background: linear-gradient(to bottom, $silver, $pale-grey);
+  background: #c9e26571;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,6 +118,19 @@
   .rectangle__icons-item {
     color: $slate;
     border-color: $light-grey-blue;
+  }
+}
+
+.palette-4 {
+  .rectangle__titles {
+    border-color: $codequetecode-green;
+    &-title {
+      color: $codequetecode-black;
+    }
+  }
+  .rectangle__icons-item {
+    color: $codequetecode-black;
+    border-color: $codequetecode-orange;
   }
 }
 
