@@ -1,5 +1,32 @@
 .body {
-  height: calc(100vh - 60px);
+  height: calc(100vh - 110px);
+
+  @media all and (min-width: $tablet-width) {
+    height: calc(100vh - 60px);
+  }
+}
+
+.group-logo {
+  display: flex;
+  flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    &_by {
+      color: $dark-green-blue;
+      font-size: 30px;
+      font-style: italic;
+      font-weight: bold;
+      margin-top: 15px;
+  
+    }
+
+    &_img {
+      width: 100px;
+        height: 100px;
+        margin: 30px 0;
+    }
 }
 
 .main {

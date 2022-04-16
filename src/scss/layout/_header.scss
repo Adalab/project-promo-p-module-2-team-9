@@ -1,10 +1,21 @@
 .header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  gap: 20px;
 
   @media all and (min-width: $tablet-width) {
-    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  &_by {
+    color: $dark-green-blue;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 15px;
+
   }
 
   &__logo {
@@ -16,4 +27,10 @@
       margin-left: 40px;
     }
   }
+
+  &__img {
+    width: 100px;
+    height: 100px;
+    margin: 30px 0;
+}
 }
