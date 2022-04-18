@@ -37,6 +37,16 @@
 .field {
   width: 100%;
   gap: 20px;
+  &__warning {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  &__warning:last-child {
+    margin-bottom: 10px;
+  }
+  &__warning-star {
+    color: red;
+  }
   &__item {
     gap: 7px;
     display: flex;
@@ -74,7 +84,7 @@
 }
 
 .upload_button {
-  display: none
+  display: none;
 }
 
 .collapsed {
@@ -102,6 +112,6 @@
   display: none;
 }
 
-.profile_label{
+.profile_label {
   cursor: pointer;
 }
