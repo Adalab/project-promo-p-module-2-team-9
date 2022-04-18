@@ -1,4 +1,6 @@
 .create {
+  min-height: calc(100vh - 245px);
+
   @media all and (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -6,6 +8,7 @@
     gap: 30px;
     background: linear-gradient(to bottom, $white-four, $whitetwo 9%);
     padding: 23px 40px 21px;
+    min-height: calc(100vh - 190px);
 
     @media all and (min-width: $desktop-width) {
       grid-template-columns: 1fr 1.5fr;

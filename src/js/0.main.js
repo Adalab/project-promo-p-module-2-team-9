@@ -37,6 +37,15 @@ const twitterBtn = document.querySelector('.js-twitter-button');
 let msg = document.querySelector('.js-message');
 const urlTwitter = document.querySelector('.js-url');
 const textCard = document.querySelector('.js-create');
+//
+const inputName = document.querySelector('.js-input-name');
+const inputJob = document.querySelector('.js-input-job');
+const inputProfileImage = document.querySelector('.js-input-profile-image');
+const inputEmail = document.querySelector('.js-input-email');
+const inputPhone = document.querySelector('.js-input-phone');
+const inputLinkedin = document.querySelector('.js-input-linkedin');
+const inputGithub = document.querySelector('.js-input-github');
+
 let data = {
   palette: 1,
   name: '',
@@ -184,6 +193,7 @@ function handleClickCreateBtn(event) {
         urlTwitter.innerHTML = serverResp.cardURL;
         urlTwitter.href = serverResp.cardURL;
         urlTwitter.classList.remove('hidden');
+        setLocalStorage();
       }
     });
 
@@ -236,11 +246,48 @@ function writeImage() {
 function fakeFileClick() {
   fileField.click();
 }
-
 /**
  * Añadimos los listeners necesarios:
  * - al botón visible para generar el click automático
  * - al campo oculto para cuando cambie su value
  */
 fileField.addEventListener('change', getImage);
+//
+// LOCALSTORAGE
+//
+//
+// Añade el objeto "data" a localStorage.
+//
+function setLocalStorage() {
+  // Convierto a "string" el objeto data.
+  const locStoData = JSON.stringify(data);
+  localStorage.setItem('localData', locStoData);
+}
+//
+// Obtiene la información del objeto "data" de localStorage.
+//
+function getLocalStorage() {
+  let locStoData = localStorage.getItem('localData');
 
+  if (locStoData !== null) {
+    const parseLocStoData = JSON.parse(locStoData);
+    data = parseLocStoData;
+    inputName.value = data.name;
+    inputJob.value = data.job;
+    inputEmail.value = data.email;
+    inputPhone.value = data.phone;
+    inputLinkedin.value = data.linkedin;
+    inputGithub.value = data.github;
+    profileImage.style.backgroundImage = `url(${data.photo})`;
+    profilePreview.style.backgroundImage = `url(${data.photo})`;
+
+    previewNameElement.innerHTML = data.name;
+    previewJobElement.innerHTML = data.job;
+    previewEmailElement.href = `mailto:${data.email}`;
+    previewPhoneElement.href = `tel:${data.phone}`;
+    previewLinkedinElement.href = data.linkedin;
+    previewGithubElement.href = data.github;
+  }
+}
+
+getLocalStorage();
